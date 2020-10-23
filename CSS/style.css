@@ -66,6 +66,7 @@ header
     font-weight: bold;
 
     color: #ccc;
+    text-decoration: none;
 }
 
 .head_inner nav ul
