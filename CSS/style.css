@@ -309,6 +309,10 @@ body.switchMode .item_title:hover {
     justify-content: center;
 }
 
+#contacts {
+    margin-top: 145px;
+}
+
 .contacts_form
 {
     /*position: relative;*/
