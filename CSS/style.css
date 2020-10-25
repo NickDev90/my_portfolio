@@ -268,12 +268,32 @@ body.switchMode .about_text
     display: block;
 
     width: calc(100% / 3 - 10px);
-    margin: 0 10px 15px 0;
+    margin: 0 10px 35px 0;
+    text-decoration: none;
+
 }
 
 .item img
 {
     max-width: 100%;
+
+}
+
+.item_title {
+	font-size: 20px;
+	color: #000;
+}
+
+.item_title:hover {
+	text-decoration: underline;
+}
+
+body.switchMode .item_title {
+	color: #ccc;
+}
+
+body.switchMode .item_title:hover {
+	color: #fff;
 }
 
 .portfolio_btn
