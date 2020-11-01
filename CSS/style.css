@@ -241,6 +241,7 @@ section
     margin-bottom: 20px;
 
     text-align: justify;
+    text-indent: 30px;
 }
 
 body.switchMode .section_title,
