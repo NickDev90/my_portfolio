@@ -244,6 +244,11 @@ section
     text-indent: 30px;
 }
 
+.skill_list {
+    margin-left: 130px;
+    font-size: 18px;
+}
+
 body.switchMode .section_title,
 body.switchMode .about_text
 {
