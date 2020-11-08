@@ -3,3 +3,9 @@ document.querySelector('.head_inner nav ul li.switch a').onclick = function (e) 
 	e.preventDefault;
 
 }
+
+document.querySelector('.burger').onclick = function () {
+	this.classList.toggle('active');
+	document.querySelector('.menu').classList.toggle('active');
+	document.querySelector('body').classList.toggle('lock');
+};
