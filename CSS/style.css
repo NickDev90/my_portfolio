@@ -527,16 +527,16 @@ footer p
 
     .head_inner .menu li.switch {
         margin-top: 20px;
-        display: flex;
+/*        display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between;*/
     }
 
-    .head_inner .menu li.switch span {
+/*    .head_inner .menu li.switch span {
         height: 100%;
         font-size: 24px;
         text-transform: uppercase;
-    }
+    }*/
 
     .head_inner .menu.active {
         top: 0;
