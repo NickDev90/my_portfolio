@@ -170,7 +170,7 @@ body.switchMode .head_inner nav ul li.switch a:after
 
 .header_body
 {
-    /*position: relative;*/
+    position: relative;
 
     width: 100%;
     height: 100%;
@@ -519,8 +519,23 @@ footer p
        height: 100%;
     }
 
-    .head_inner .menu a {
-        font-size: 18px;
+    .head_inner .menu li a {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .head_inner .menu li.switch {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .head_inner .menu li.switch span {
+        height: 100%;
+        font-size: 24px;
+        text-transform: uppercase;
     }
 
     .head_inner .menu.active {
