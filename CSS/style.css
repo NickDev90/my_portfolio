@@ -588,7 +588,7 @@ footer p
         width: 90%;
     }
 
-    .portfolio_items .item:nth-child(n+4) {
+    .portfolio_items .item:nth-child(4) {
         display: none;
     }
 
