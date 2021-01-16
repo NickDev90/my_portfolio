@@ -278,11 +278,17 @@ section
     font-size: 18px;
 }
 
+.skill_list li {
+    line-height: 1.5;
+}
+
 body.switchMode .section_title,
 body.switchMode .about_text
 {
     color: #fff;
 }
+
+
 
 .portfolio_items
 {
@@ -422,10 +428,16 @@ footer p
     color: #ccc;
 }
 
+
+
 @media (max-width: 767px) {
-    section {
+    section, header {
         height: auto;
         overflow: auto;
+    }
+
+    header {
+        margin-bottom: 40px;
     }
 
     .header_body {
@@ -584,8 +596,13 @@ footer p
         width: 100%;
     }
 
+    .section_title {
+        text-align: center;
+    }
+
     .portfolio_items .item {
         width: 90%;
+        margin: 20px auto;
     }
 
     .portfolio_items .item:nth-child(4) {
