@@ -9,8 +9,8 @@
 body
 {
     font-family: 'Montserrat', sans-serif;
-
-    /*position: relative;*/
+ 
+    position: relative;
 
     -webkit-transition: all .7s ease;
             transition: all .7s ease;
@@ -47,8 +47,11 @@ header
 
 .header_head
 {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 3;
 }
 
 .header_head:before {
@@ -334,6 +337,13 @@ body.switchMode .about_text
     top: 0;
     left: 0;
 }
+
+.image_item img:hover 
+{
+    border: 2px solid #000;
+    opacity: 0.8;
+}
+    
 
 .item_title a {
 	font-size: 20px;
