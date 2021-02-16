@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-
+ 
 body
 {
     font-family: 'Montserrat', sans-serif;
@@ -129,6 +129,12 @@ header
     text-transform: uppercase;
 
     color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.head_inner nav ul li a:hover 
+{
+    letter-spacing: 1px;
 }
 
 .head_inner nav ul li.switch a
@@ -296,7 +302,7 @@ body.switchMode .about_text
 
 
 
-.portfolio_items
+/*.portfolio_items
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -306,11 +312,13 @@ body.switchMode .about_text
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-}
+    overflow: hidden;   
+}*/
 
 .portfolio__item {
-    width: 30%;
-    margin: 20px 10px 15px 10px;
+    /*width: 30%;*/
+    /*margin: 20px 10px 15px 10px;*/
+    /*position: relative;*/
 }
 
 .image_item
@@ -450,8 +458,84 @@ footer p
     display: none;
 }
 
+.slick-slider {
+    display: flex;
+    position: relative;
+    padding: 0 60px;
+}
 
+/*.slick-list {
+    position: relative;
+    padding: 0 60px;
+}*/
 
+.slick-slide {
+    padding: 5px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+
+}
+
+.slick-dots li {
+    display: block;
+    font-size: 0;
+    margin: 0 7px;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    outline: none;
+    background-color: #fff;
+    transition: all .3s ease;
+    cursor: pointer;
+
+}
+
+.slick-dots li.slick-active button {
+    background-color: grey;
+}
+
+body.switchMode .slick-dots li.slick-active button {
+    background-color: black;
+    border: 3px solid #fff;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 40%;
+    /*z-index: 2;*/
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;   
+    outline: none;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 0;
+    background: url('../img/1492790978-5arrow-left_84256.png') 0 0 / 100% no-repeat;
+}
+
+.slick-next {
+    right: 0;
+    background: url('../img/1492790975-4arrow-right_84163.png') 0 0 / 100% no-repeat;
+}
+
+body.switchMode .slick-prev {
+    background: url('../img/night_arrow_left.png') 0 0 / 100% no-repeat;
+}
+
+body.switchMode .slick-next {
+    background: url('../img/night_arrow_right.png') 0 0 / 100% no-repeat;
+}
 
 
 @media (max-width: 1025px) {
@@ -515,6 +599,7 @@ footer p
         width: 30px;
         height: 20px;
         z-index: 5;
+        cursor: pointer;
     }
     .burger span {
         background-color: #ccc;
@@ -655,15 +740,19 @@ footer p
         margin: 20px auto;
     }
 
-    .portfolio__item:nth-child(4) {
+/*    .portfolio__item:nth-child(4) {
         display: none;
     }
-
+*/
 
     #contacts {
         margin-top: 10px;
     }
-
-
 }
 
+@media (max-width: 480px) {
+    .slick-slider {
+        padding: 0;
+        display: block;
+    }
+}
