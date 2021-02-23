@@ -96,11 +96,16 @@ header
     z-index: 5;
 }
 
+.head_inner .menu {
+
+}
+
 .head_inner nav ul
-{
+{   
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
 
     margin: 0;
     padding: 0;
@@ -137,8 +142,10 @@ header
     letter-spacing: 1px;
 }
 
-.head_inner nav ul li.switch a
+.head_inner nav ul li.switch span
 {
+    display: inline-block;
+
     position: relative;
 
     overflow: hidden;
@@ -150,9 +157,10 @@ header
 
     border: 1px solid #ccc;
     border-radius: 10em;
+    cursor: pointer;
 }
 
-.head_inner nav ul li.switch a:after
+.head_inner nav ul li.switch span:after
 {
     position: absolute;
     top: 0;
@@ -174,7 +182,19 @@ header
 }
 */
 
-body.switchMode .head_inner nav ul li.switch a:after
+.change-lang {
+    /*padding: 10px;*/
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 24px;
+    background-color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+body.switchMode .head_inner nav ul li.switch span:after
 {
     left: 20px;
 }
@@ -236,6 +256,11 @@ a.btn
     color: #fff;
     border-radius: 10px;
     background-color: #f83b3a;
+    transition: .3s;
+}
+
+a.btn:hover {
+    letter-spacing: 4px;
 }
 
 .header_body_inner .right {
@@ -427,7 +452,7 @@ body.switchMode .image_item img:hover {
     padding: 15px 30px;
 
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
     color: #fff;
     border: none;
@@ -435,8 +460,13 @@ body.switchMode .image_item img:hover {
     background-color: #f83b3a;
     outline: none;
     cursor: pointer;
+    transition: .3s;
 }
 
+.contacts_form form button:hover {
+    letter-spacing: 3px;
+    font-weight: bold;
+}
 
 footer
 {
@@ -666,7 +696,7 @@ body.switchMode .slick-next {
     .head_inner .menu li a {
         font-size: 22px;
         margin-top: 20px;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
 
     .head_inner .menu li.switch {
@@ -693,6 +723,11 @@ body.switchMode .slick-next {
     .head_inner nav ul li a {
         margin: 0 0 20px 0;
         padding: 0;
+    }
+
+    .change-lang {
+        margin-left: 0;
+        margin-top: 40px;
     }
 
 /*    .header_body .container {

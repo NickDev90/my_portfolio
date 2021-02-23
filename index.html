@@ -21,10 +21,14 @@
 					</div>
 					<nav class="menu">
 						<ul>
-							<li><a href="#about">O mnie</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#contacts">Kontakt</a></li>
-							<li class="switch"><!-- <span id="switch">switch</span> --><a href="#"></a></li>
+							<li><a href="#about" key="about" class="lang">O mnie</a></li>
+							<li><a href="#portfolio" key="portfolio" class="lang">Portfolio</a></li>
+							<li><a href="#contacts" key="contact" class="lang">Kontakt</a></li>
+							<li class="switch"><!-- <span id="switch">switch</span> --><span></span></li>
+							<select class="change-lang">
+								<option value="pl">PL</option>
+								<option value="en">EN</option>
+							</select>
 						</ul>
 					</nav>
 				</div>
@@ -35,11 +39,11 @@
 			<div class="container">
 				<div class="header_body_inner">
 					<div class="left">
-						<div class="title">
+						<div class="title lang" key="title">
 							<b>Hej!</b> <br> <b>Ja Nick</b> <br> <span>Jestem web 
 								<br> developerem. </span>
 						</div>
-						<a href="#contacts" class="btn btn__contact">Kontakt ze mną</a>
+						<a href="#contacts" class="btn btn__contact lang" key="btnContact">Kontakt ze mną</a>
 					</div>
 					<div class="right">
 						<img src="img/ava-min600.png" alt="">
@@ -51,16 +55,16 @@
   
 	<section class="about" id="about">
 		<div class="container">
-			<div class="section_title">
+			<div class="section_title lang" key="aboutTitle">
 				<h4>Moja historia</h4>
 			</div>
 			<div class="about_text">
-				<p>Witam serdecznie, mam na imię Mikołaj, mam 30 lat i jestem młodym programistą.  Wiem, że programowanie nie ma granic poznania i dobry programista ciągłe rozwija się idąc z duchem czasu i ucząć się czegoś  nowego. Swoją przygode z IT zacząłem ponad rok temu, i z tego czasu  kodowanie stało się moją pasją. Od szkolnych lat interesowały mnie przedmioty ścisłe, w szczególności królowa nauk – matematyka. Jednak życie potoczyło się trochę inaczej i zaniosło mnie na służbę do administracji państwowej, gdzie swoje zdolności intelektualne i logiczne myślenie nie wykorzystywałem na 100%. Jednak po upływie czasu zrozumiałem, że mój potencjał osobisty i umienie szybkiego uczenia się czemuś nowemu pozwalają zacząć robić to, co naprawdę przynosi mi przyjemność i z czego jestem dumny. Wiem, że za rok czasu nie da się osiągnąć glębi programowania, jednak poznać jego podstawy i zalożyć fundament dla przyszłego wieżowca – spokojnie. </p>
-				<p>Więc, za ten rok mogę pochwalić się ogarnięńciem niezbędnej bazy, pozwalającej <b>od zaraz</b> tworzyć produkty webowe z wykorzystaniem nowoczesnych technologii i spełniające wymagania funkcjonalności oraz użyteczności. Ta baza składa się m.in. z: </p>
+				<p class="lang" key="par1">Witam serdecznie, mam na imię Mikołaj, mam 30 lat i jestem młodym programistą.  Wiem, że programowanie nie ma granic poznania i dobry programista ciągłe rozwija się idąc z duchem czasu i ucząć się czegoś  nowego. Swoją przygode z IT zacząłem ponad rok temu, i z tego czasu  kodowanie stało się moją pasją. Od szkolnych lat interesowały mnie przedmioty ścisłe, w szczególności królowa nauk – matematyka. Jednak życie potoczyło się trochę inaczej i zaniosło mnie na służbę do administracji państwowej, gdzie swoje zdolności intelektualne i logiczne myślenie nie wykorzystywałem w pełni. Jednak po upływie czasu zrozumiałem, że mój potencjał osobisty i umienie szybkiego uczenia się czemuś nowemu pozwalają zacząć robić to, co naprawdę przynosi mi przyjemność i z czego jestem dumny. Wiem, że za rok czasu nie da się osiągnąć glębi programowania, jednak poznać jego podstawy i zalożyć fundament dla przyszłego wieżowca – spokojnie. </p>
+				<p class="lang" key="par2">Więc, za ten rok mogę pochwalić się ogarnięńciem niezbędnej bazy, pozwalającej <b>od zaraz</b> tworzyć produkty webowe z wykorzystaniem nowoczesnych technologii i spełniające wymagania funkcjonalności oraz użyteczności. Ta baza składa się m.in. z: </p>
 
-				<ul class="skill_list">
+				<ul class="skill_list lang" key="skillsList">
 					<li><b>HTML</b> – HTML5, BEM, czysty kod;</li>
-					<li><b>CSS</b> – CSS3 (flexbox, grids), SCSS, SASS;</li>
+					<li><b>CSS</b> – CSS3 (flex-box, grids), SCSS, SASS;</li>
 					<li><b>JavaScript</b> – EcmaScript 6, Jquery, JS biblioteki;</li>
 					<li><b>Bootstrap 4</b>;</li>
 					<li><b>WordPress</b> (w tym tworzenie własnego szablonu);</li>
@@ -75,7 +79,7 @@
 
 	<section class="portfolio" id="portfolio">
 		<div class="container">
-			<div class="section_title">
+			<div class="section_title lang" key="portfolioTitle">
 				<h3>Portfolio</h3>
 			</div>
 
@@ -118,7 +122,7 @@
 					</div>
 					<div class="item_title">
 						<a href="https://nickdev90.github.io/snake-game/">
-							<p>Simple snake game on JS (handmade)</p>
+							<p>Simple snake game on JS (handmade, for PC only)</p>
 						</a>
 					</div>
 				</div>
@@ -148,16 +152,17 @@
 
 	<section id="contacts">
 		<div class="container">
-			<div class="section_title">
+			<div class="section_title lang" key="contactsTitle">
 				Kontakt ze mną
 			</div>
 			<div class="contacts_form">
 				<form action="https://formspree.io/f/mnqovkzd" method="POST">
-					<input type="text" name="name" placeholder="Your name">
-					<input type="email" name="_replyto" placeholder="Your email">
-					<textarea name="text" cols="30"	rows="10" placeholder="Your message"></textarea>
+					<input type="text" name="name" class="holder" placeholder="Twoje imę" key="formName">
+					<input type="email" name="_replyto" class="holder" placeholder="Twój email" key="formEmail">
+					<textarea name="text" cols="30"	rows="10" class="holder"
+					placeholder="Twoja wiadomość" key="formMessage"></textarea>
 					<input type="hidden" name="_next" value="https://nickdev90.github.io/my_portfolio">
- 					<button type="submit">Send</button>
+ 					<button type="submit" class="lang" key="formBtn">Wyślij</button>
 				</form>
 			</div>
 		</div>
