@@ -29,7 +29,7 @@ body.switchMode
 
 .container
 {
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -236,18 +236,20 @@ a.btn
 
     margin-top: 20px;
     padding: 15px 30px;
+    width: 100%;
 
     text-decoration: none;
     letter-spacing: 3px;
+    text-align: center;
 
     color: #fff;
     border-radius: 10px;
     background-color: #f83b3a;
-    transition: .3s;
+    transition: all ease .5s;
 }
 
 a.btn:hover {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .header_body_inner .right {
@@ -342,6 +344,10 @@ body.switchMode .about_text
 {
     opacity: 0.8;
     transform: scale(1.05);
+}
+
+.item__title {
+    font-style: italic;
 }
 
 
