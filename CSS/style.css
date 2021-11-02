@@ -99,8 +99,7 @@ header
     color: #fff;
 }
 
-.head_inner nav ul
-{   
+.head_inner nav ul {   
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,19 +115,16 @@ header
     z-index: 3 ;
 }
 
-.head_inner nav ul li
-{
+.head_inner nav ul li {
     list-style-type: none;
+    padding: 20px 30px;
 }
 
-.head_inner nav ul li a
-{
+.head_inner nav ul li a {
     font-size: 14px;
 
     display: inline-block;
     position: relative;
-
-    padding: 20px 30px;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -137,26 +133,33 @@ header
     transition: all 0.3s ease;
 }
 
+.head_inner nav ul li a::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    margin-top: 15px;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 .head_inner nav ul li a:hover 
 {
     color: #fff;
     font-weight: 500;
 }
 
-/* .head_inner nav ul li a:before {
-    content: "";
-    position: absolute;
+.head_inner nav ul li a:hover:after,
+.head_inner nav ul li a:focus:after {
     width: 100%;
-    height: 2px;
-    bottom: 1px;
-    left: 0;
-    visibility: visible;
-    -webkit-transform: translate3d(0,0,0) scaleX(0);
-    transform: translate3d(0,0,0) scaleX(0);
-    transition: all .3s ease 0s;
-    background-color: #fff;
-} */
-
+}
 
 .head_inner nav ul li.switch span
 {
@@ -174,6 +177,12 @@ header
     border: 1px solid #ccc;
     border-radius: 10em;
     cursor: pointer;
+    transition: all .3s ease
+}
+
+.head_inner nav ul li.switch span:hover, 
+.head_inner nav ul li.switch span:focus {
+    border-color: #fff;
 }
 
 .head_inner nav ul li.switch span:after
@@ -193,6 +202,11 @@ header
     background-color: #ccc;
 }
 
+.head_inner nav ul li.switch span:hover:after,
+.head_inner nav ul li.switch span:hover:focus {
+    background-color: #fff;
+}
+
 
 .change-lang {
     margin-left: 20px;
@@ -203,6 +217,11 @@ header
     background-color: #ccc;
     font-size: 14px;
     cursor: pointer;
+    transition: all .3s ease;
+}
+
+.change-lang:hover {
+    background-color: #fff;
 }
 
 body.switchMode .head_inner nav ul li.switch span:after
@@ -272,7 +291,7 @@ a.btn
 }
 
 a.btn:hover {
-    letter-spacing: 2px;
+    color: #fff;
 }
 
 .header_body_inner .right {
@@ -336,6 +355,10 @@ body.switchMode .about_text
     color: #fff;
 }
 
+.project_link {
+    display: block;
+    position: relative;
+}
 
 .image_item
 {
@@ -349,28 +372,51 @@ body.switchMode .about_text
     text-decoration: none;
     padding-bottom: 58%;
     margin-bottom: 10px;
+
+    transition: all 0.3s ease 0s;
 }
 
 .image_item img
 {
-    width: 100%;
-    height: 100%;   
-    object-fit: cover;
     position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     top: 0;
-    left: 0;
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-
-.image_item img:hover 
-{
-    opacity: 0.8;
-    transform: scale(1.05);
+    left: 0;   
 }
 
 .item__title {
-    font-style: italic;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.item__title p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.project_link:hover .item__title {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.project_link:hover .image_item {
+    opacity: 0.5;
 }
 
 
@@ -379,7 +425,7 @@ body.switchMode .item__title {
 }
 
 #contacts {
-    margin-top: 145px;
+    margin-top: 100px;
 }
 
 .contacts_form

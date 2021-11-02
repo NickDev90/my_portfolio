@@ -49,6 +49,8 @@ sel.onchange =  () => {
 $(document).ready(function () {
 
 	// Slick slider
+	// $(".slick-track").css("max-width", $(window).width());
+
 	$('.portfolio_items').slick({
 	  infinite: true,
 	  slidesToShow: 3,
