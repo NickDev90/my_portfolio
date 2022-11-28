@@ -2,7 +2,7 @@
 document.querySelector('.head_inner nav ul li.switch span').onclick = function (e) {
 	e.preventDefault;
 	document.querySelector('body').classList.toggle('switchMode');
-};
+}; 
 
 document.querySelector('.burger').onclick = function () {
 	this.classList.toggle('active');
@@ -12,7 +12,6 @@ document.querySelector('.burger').onclick = function () {
 
 document.querySelectorAll('.menu ul li').forEach(function (e) {
 	e.onclick = () => {
-		console.log(e);
 		document.querySelector('.menu').classList.remove('active');
 		document.querySelector('.burger').classList.remove('active');
 		document.querySelector('body').classList.remove('lock');
@@ -21,13 +20,14 @@ document.querySelectorAll('.menu ul li').forEach(function (e) {
 
 
 // Language changing, the data are in external file '/.lang_data.module.js'
-let sel = document.querySelector('.change-lang');
+const selectButton = document.querySelector('.change-lang');
 
-sel.onchange =  () => {
-	let langItems = document.querySelectorAll('.lang');
+selectButton.onchange =  () => {
+	const langItems = document.querySelectorAll('.lang');
+	const lang = document.querySelector('.change-lang').value;
 
-	langItems.forEach(function (item) {
-		let lang = document.querySelector('.change-lang').value;
+
+	langItems.forEach( item => {
 		item.innerHTML = arrLang[lang][item.getAttribute('key')];
 	})
 
@@ -35,12 +35,9 @@ sel.onchange =  () => {
 	document.querySelector('.burger').classList.remove('active');
 	document.querySelector('body').classList.remove('lock');
 
-	let holders = document.querySelectorAll('.holder');
-
-	holders.forEach(function (elem) {
-		let lang = document.querySelector('.change-lang').value;
+	const formInputs = document.querySelectorAll('.holder');
+	formInputs.forEach(function (elem) {
 		elem.placeholder = arrLang[lang][elem.getAttribute('key')];
-		console.log(elem);
 	})
 }
 
@@ -94,7 +91,7 @@ $(document).ready(function () {
 		}, 300);
 	}) 
 
-	$('.btn__contact').click(function () {
+	$('.contact_link').click(function () {
 		var target = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(target).offset().top -100

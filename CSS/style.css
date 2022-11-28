@@ -268,15 +268,20 @@ body.switchMode .head_inner nav ul li.switch span:after
     color: #f83b3a;
 }
 
-
-
-a.btn
+.contact_link
 {
-    font-weight: bold;
+    
 
     display: inline-block;
 
     margin-top: 20px;
+    width: 100%;
+}
+
+.btn__contact {
+    font-weight: 600;
+    font-size: 16px;
+
     padding: 15px 30px;
     width: 100%;
 
@@ -285,13 +290,17 @@ a.btn
     text-align: center;
 
     color: #fff;
+    border: 2px solid #f83b3a;
     border-radius: 10px;
     background-color: #f83b3a;
-    transition: all ease .5s;
+
+    cursor: pointer;
+    transition: all ease .3s;
 }
 
-a.btn:hover {
-    color: #fff;
+.btn__contact:hover {
+    color: #f83b3a;
+    background-color: transparent;
 }
 
 .header_body_inner .right {
@@ -456,12 +465,16 @@ body.switchMode .item__title {
 
     width: 100%;
     padding: 10px 0 10px 30px;
+    margin-bottom: 20px;
 
     border: 1px solid #333;
     border-radius: 3px;
+
+    resize: none;
+    overflow: auto;
 }
 
-.contacts_form form button
+/* .contacts_form form button
 {
     font-size: 20px;
 
@@ -481,12 +494,12 @@ body.switchMode .item__title {
     outline: none;
     cursor: pointer;
     transition: .3s;
-}
+} */
 
-.contacts_form form button:hover {
+/* .contacts_form form button:hover {
     letter-spacing: 3px;
     font-weight: bold;
-}
+} */
 
 footer
 {

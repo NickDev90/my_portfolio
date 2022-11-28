@@ -43,7 +43,11 @@
 							<b>Hej!</b> <br> <b>Ja Nick</b> <br> <span>Jestem web 
 								<br> developerem. </span>
 						</div>
-						<a href="#contacts" class="btn btn__contact lang" key="btnContact">Kontakt ze mną</a>
+						<a href="#contacts" class="contact_link">
+							<button class="btn__contact lang" key="btnContact">
+								Kontakt ze mną
+							</button>
+						</a>
 					</div>
 					<div class="right">
 						<img src="img/my_photo.png" alt="">
@@ -59,19 +63,20 @@
 				<h4>Moja historia</h4>
 			</div>
 			<div class="about_text">
-				<p class="lang" key="par1">Witam serdecznie, mam na imię Mikołaj, mam 30 lat i jestem młodym programistą.  Wiem, że programowanie nie ma granic poznania i dobry programista ciągłe rozwija się idąc z duchem czasu i ucząć się czegoś  nowego. Swoją przygode z IT zacząłem ponad rok temu, i z tego czasu  kodowanie stało się moją pasją. Od szkolnych lat interesowały mnie przedmioty ścisłe, w szczególności królowa nauk – matematyka. Jednak życie potoczyło się trochę inaczej i zaniosło mnie na służbę do administracji państwowej, gdzie swoje zdolności intelektualne i logiczne myślenie nie wykorzystywałem w pełni. Jednak po upływie czasu zrozumiałem, że mój potencjał osobisty i umienie szybkiego uczenia się czemuś nowemu pozwalają zacząć robić to, co naprawdę przynosi mi przyjemność i z czego jestem dumny. Wiem, że za rok czasu nie da się osiągnąć glębi programowania, jednak poznać jego podstawy i zalożyć fundament dla przyszłego wieżowca – spokojnie. </p>
-				<p class="lang" key="par2">Więc, za ten rok mogę pochwalić się ogarnięńciem niezbędnej bazy, pozwalającej <b>od zaraz</b> tworzyć produkty webowe z wykorzystaniem nowoczesnych technologii i spełniające wymagania funkcjonalności oraz użyteczności. Ta baza składa się m.in. z: </p>
+				<p class="lang" key="par1">Witam serdecznie, mam na imię Mikołaj, mam 32 lata i jestem młodym programistą.  Wiem, że programowanie nie ma granic poznania i dobry programista ciągłe rozwija się idąc z duchem czasu i ucząć się czegoś  nowego. Swoją przygode z IT zacząłem ponad dwa lata temu, i z tego czasu  kodowanie stało się moją pasją. Od szkolnych lat interesowały mnie przedmioty ścisłe, w szczególności królowa nauk – matematyka. Jednak życie potoczyło się trochę inaczej i zaniosło mnie na służbę do administracji państwowej, gdzie swoje zdolności intelektualne i myślenie logiczne nie wykorzystywałem w pełni. Jednak po upływie czasu zrozumiałem, że mój potencjał osobisty i umienie szybkiego uczenia się czemuś nowemu pozwalają zacząć robić to, co naprawdę przynosi mi przyjemność i z czego jestem dumny. Wiem, że za dwa lata nie da się osiągnąć glębi programowania, jednak poznać jego podstawy i zalożyć fundament dla przyszłego wieżowca – spokojnie.</p>
+				<p class="lang" key="par2">Więc, za te dwa lata mogę pochwalić się opanowaniem niezbędnej bazy, pozwalającej <b>od zaraz</b> tworzyć produkty webowe z wykorzystaniem nowoczesnych technologii i spełniające wymagania funkcjonalności oraz użyteczności. Ta baza składa się m.in. z: </p>
+
 
 				<ul class="skill_list lang" key="skillsList">
 					<li><b>HTML</b> – HTML5, BEM, czysty kod;</li>
-					<li><b>CSS</b> – CSS3 (flex-box, grids), SCSS, SASS;</li>
+					<li><b>CSS</b> – CSS3 (flex-box, grid), SCSS, SASS;</li>
 					<li><b>JavaScript</b> – EcmaScript 6, Jquery, JS biblioteki;</li>
-					<li><b>Bootstrap 4</b>;</li>
+					<li><b>Bootstrap, Material UI, Ant Design i inne biblioteki UI</b>;</li>
 					<li><b>WordPress</b> (w tym tworzenie własnego szablonu);</li>
-					<li>Anatomia <b>Reaktu</b> (jak działa od środka, tworzenie własnego <b>State</b> i <b>Store</b>, praca z API, wykorzystanie wspomagających bibliotek, t.j. <i>Redux, React-Redux, Redux-thunk, Redux-form, Axios</i> i t.p.);</li>
-					<li>Robota z <b>Gitem</b>, umiejętność <b>debugowania</b>;</li>
-					<li>Język <b>angielski</b>, pozwalający czerpać wiedzę od najlepszych na <i>W3schools, Stackoverflow, MDN (Mozilla Developer Network)</i> i  mnóstwie innych portali dla programistów;</li>
-					<li>Umiejętność <b>szybkiego poszukiwania</b> potrzebnej informacji i  opanowania nowych technologii. </li>
+					<li>Anatomia <b>Reaktu</b> (jak działa od środka, budowanie komponentów funkcyjnych i klasowych, tworzenie własnych <b>hooków</b>, praca z API, wykorzystanie wspomagających bibliotek, t.j. <i>Redux, React-Router, Axios, Formik</i> i t.p.);</li>
+					<li>Praca z <b>Gitem</b>, umiejętność <b>debugowania</b> kodu;</li>
+					<li>Język <b>angielski</b>, pozwalający pracować z każdą dokumentacją i szybko znaleźć potrzebną informację na takich źródłach jak <i>w3schools, Stackoverflow, MDN (Mozilla Developer Network)</i> i  mnóstwie innych portali dla programistów;</li>
+					<li>Umiejętność <b>rozwiązywania problemów</b> i szybkiego opanowania nowych technologii.</li>
 				</ul>
 			</div>
 		</div>
@@ -87,29 +92,29 @@
 
 			<div class="portfolio_items">  <!-- is configured by Slick-Slider!!! -->
 				<div class="portfolio__item">
-						<a href="https://nickdev90.github.io/bulding_brands/" class="project_link">
-							<div class="image_item">
-								<img src="img/buldingBrands_screen-min.png" alt="">
-							</div>
-							<span class="item__title">
-								<p>Mining company's website (RWD)</p>
-							</span>
-						</a>
-				</div>
+					<a href="https://nickdev90.github.io/star-wars-api/" class="project_link">
+						<div class="image_item">
+							<img src="img/star-wars_screen.png" alt="Star wars">
+						</div>
+						<span class="item__title">
+							<p> Star Wars info app (with real API) </p>
+						</span>
+					</a>
+				</div>	
 				<div class="portfolio__item">
 					<a href="https://nickdev90.github.io/Rick-and-Morty-characters" class="project_link">
 						<div class="image_item">
-							<img src="img/Rick_and_Morty-min.png" alt="">
+							<img src="img/Rick_and_Morty-min.png" alt="Rick and Morty">
 						</div>
 						<span class="item__title">
-							<p> Look for Rick&Morty characters (SPA on React JS)</p>
+							<p> Search Rick&Morty characters (SPA on React JS)</p>
 						</span>
 					</a>
 				</div>			
 				<div class="portfolio__item">
 					<a href="https://nickdev90.github.io/rest-countries-and-flags/" class="project_link">
 						<div class="image_item">
-							<img src="img/desktop-design-home-dark.jpg" alt="">
+							<img src="img/desktop-design-home-dark.jpg" alt="Flags and countries">
 						</div>
 						<span class="item__title">
 							<p> Get info about any country (React app with real API) </p>
@@ -119,7 +124,7 @@
 				<div class="portfolio__item">
 					<a href="https://nickdev90.github.io/todolist-react-typescript/" class="project_link">
 						<div class="image_item">
-							<img src="img/Todo-List.screen.png" alt="">
+							<img src="img/Todo-List.screen.png" alt="Todo list">
 						</div>
 						<span class="item__title">
 							<p> To-do list on React and TypeScript </p>
@@ -127,9 +132,19 @@
 					</a>
 				</div>	
 				<div class="portfolio__item">
+					<a href="https://nickdev90.github.io/bulding_brands/" class="project_link">
+						<div class="image_item">
+							<img src="img/buldingBrands_screen-min.png" alt="Building brands">
+						</div>
+						<span class="item__title">
+							<p>Mining company's website (RWD)</p>
+						</span>
+					</a>
+				</div>
+				<div class="portfolio__item">
 						<a href="https://nickdev90.github.io/bike-shop-company/" class="project_link">
 							<div class="image_item">
-								<img src="img/bikeShop_screen.png" alt="">
+								<img src="img/bikeShop_screen.png" alt="bike shop">
 							</div>
 							<span class="item__title">
 								<p>Bike-shop website (full-adaptive images)</p>
@@ -139,7 +154,7 @@
 				<div class="portfolio__item">
 						<a href="https://nickdev90.github.io/RWD-website/" class="project_link">
 						<div class="image_item">
-							<img src="img/embrace-responsive-web-design-1024x614.jpg" alt="">
+							<img src="img/embrace-responsive-web-design-1024x614.jpg" alt="RWD website">
 						</div>
 						<span class="item__title">
 								<p>RWD-website on Bootstrap, Jquery, Slick etc...</p>
@@ -149,7 +164,7 @@
 				<div class="portfolio__item snake_game">
 						<a href="https://nickdev90.github.io/snake-game/" class="project_link">
 							<div class="image_item">
-								<img src="img/snake_JS.png" alt="">
+								<img src="img/snake_JS.png" alt="Snake game">
 							</div>
 							<span class="item__title">
 								<p>Simple snake game on JS (handmade, for PC only)</p>
@@ -159,20 +174,10 @@
 				<div class="portfolio__item">
 						<a href="https://nickdev90.github.io/cleaning_company/" class="project_link">
 							<div class="image_item">
-								<img src="img/screen_cleaning-min.png" alt="">
+								<img src="img/screen_cleaning-min.png" alt="Cleaning company">
 							</div>
 							<span class="item__title">
 								<p>Some cleaning company's website</p>
-							</span>
-						</a>
-				</div>
-				<div class="portfolio__item">
-						<a href="https://nickdev90.github.io/mikmar.pl/" class="project_link">
-							<div class="image_item">
-								<img src="img/partner-ship.jpg" alt="">
-							</div>
-							<span class="item__title">
-								<p>Job agency website</p>
 							</span>
 						</a>
 				</div>
@@ -192,14 +197,14 @@
 					<textarea name="text" cols="30"	rows="10" class="holder"
 					placeholder="Twoja wiadomość" key="formMessage"></textarea>
 					<input type="hidden" name="_next" value="https://nickdev90.github.io/my_portfolio">
- 					<button type="submit" class="lang" key="formBtn">Wyślij</button>
+ 					<button type="submit" class="btn__contact lang" key="formBtn">Wyślij</button>
 				</form>
 			</div>
 		</div>
 	</section>
 
 	<footer>
-		<p>Made by M. Hnatiuk. 2021</p>
+		<p>Made by M. Hnatiuk. 2022</p>
 	</footer>
 	<script src="JS/jquery-3.5.1.min.js"></script>
 	<script src="slick/slick.min.js"></script>
